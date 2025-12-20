@@ -4,8 +4,7 @@ import com.example.GestionStuden.model.Payement;
 import com.example.GestionStuden.model.PayementStatus;
 import com.example.GestionStuden.model.PayementType;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.security.aot.hint.PrePostAuthorizeExpressionBeanHintsRegistrar;
-import org.springframework.security.core.parameters.P;
+
 
 import java.util.List;
 
