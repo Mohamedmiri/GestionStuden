@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button>
+  <button mat-icon-button (click)="Mydrawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
   <span style="flex : auto"></span>
@@ -17,7 +17,7 @@
 
 
 <mat-drawer-container>
-  <mat-drawer opened="true" mode="side" position="start">
+  <mat-drawer #Mydrawer opened="true" mode="side" position="start">
     <mat-list>
       <mat-list-item>
         <button mat-button routerLink="/dashboard">

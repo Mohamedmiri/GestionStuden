@@ -5,6 +5,20 @@ import { Component } from '@angular/core';
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
+   public loginForm! : FormGroup;
+   constructor(private fb: FormBuilder){
+   }
+   ngOnInit(): void{
+     this.loginForm=this.fb.group({
+     username: this.fb.control(''),
+     password : this.fb.control('')});
+   }
+
+   login(): void{
+     let username=this.loginForm.value.username;
+     let password=this.loginForm.value.password;
+   }
+
 
 }
